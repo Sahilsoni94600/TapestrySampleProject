@@ -5,9 +5,7 @@
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
         <t:form t:id="otpForm">
-<!--
             Email Id: <t:textfield t:id="email" class="input-block-level" validate="required" placeholder="Email address"/>
--->
             <t:submit class="btn btn-large btn-primary" value="Submit"/>
         </t:form>
     </div>

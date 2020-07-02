@@ -16,18 +16,18 @@ public class Otp {
     @Inject
     private AlertManager alertManager;
 
-    @Inject
+    @InjectComponent
     private Form otpForm;
 
-    /*@InjectComponent("email")
+    @InjectComponent("email")
     private TextField emailField;
 
     @Property
-    private String email;*/
+    private String email;
 
     void onValidateFromOtpForm() {
-        /*if (!email.equals("sahilsoni94600@gmail.com"))
-            otpForm.recordError(emailField, "Try with user: sahilsoni94600@gmail.com");*/
+        if (!email.equals("sahilsoni94600@gmail.com"))
+            otpForm.recordError(emailField, "Try with user: sahilsoni94600@gmail.com");
     }
 
     Object onSuccessFromOtpForm() {
